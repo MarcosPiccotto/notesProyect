@@ -1,0 +1,6 @@
+- ver a midu, conectar la db y eso de mongoose (listo)
+- configurar dotenv y que funcione bien jeje (no se ocmo se usa, ver despues)
+
+- configurar lo de las rutas para que este bien
+
+- plantear el metodo mvc
