@@ -21,6 +21,14 @@ const noteSchema = new Schema({
     
 });
 
+noteSchema.set('toJSON', {
+    transform: (document, returnedObject) => {
+        returnedObject.id = returnedObject._id
+        delete returnedObject._id
+        delete returnedObject.__v
+    }
+})
+
 //Creación del modelo nota
 const Note = model('note', noteSchema);
 
